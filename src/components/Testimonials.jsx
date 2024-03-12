@@ -3,10 +3,10 @@ import Card from './Card'
 const Testimonials = () => {
   return (
     <div>
-        <div className='mt-10'>
-            <div className='flex justify-center'>
-                <button className='w-auto h-auto p-2 bg-white tracking-wider  rounded-full shadow-2xl'>Testimonials</button>
-            </div>
+        <div className='mt-64'>
+        <div className="flex  justify-center text-sm mb-4 tagline text-[#223ED4]">
+       Testimonials
+      </div>
             <div className='flex justify-center mt-2 mb-24'>
                 <h1 className='text-3xl font-bold tracking-widest'>WHAT OUR CUSTOMERS SAYS</h1>
             </div>

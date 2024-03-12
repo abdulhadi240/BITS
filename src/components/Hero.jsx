@@ -1,34 +1,71 @@
-"use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import Headline from "./Headline";
+
+const navItems = [
+  {
+    name: "Home",
+    link: "/",
+    // icon: <IconHome className="w-4 h-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Demos",
+    link: "/demo",
+    // icon: <IconUser className="w-4 h-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Pricing",
+    link: "/pricing",
+    // icon: <IconUser className="w-4 h-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "About",
+    link: "/about",
+    // icon: <IconUser className="w-4 h-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+    // icon: (
+    //   <IconMessage className="w-4 h-4 text-neutral-500 dark:text-white" />
+    // ),
+  },
+];
 
 const Hero = () => {
   return (
-    <div className="relative h-screen bg-no-repeat bg-cover hero">
-      <div className="relative image">
-        <img src={"/image 2.png"} alt="hero" fetchPriority="true" />
-      </div>
-      <div className="absolute z-10 w-full top-[450px] flex flex-col items-center justify-center gap-12">
-        <h1 className="max-w-3xl font-bold text-center text-white text-7xl">
-          Unlock your business potential
-        </h1>
-        <p className="max-w-2xl text-center text-white">
-          Buzzle is your strategic ally in the world of business intelligence.
-          Unlock the power of data-driven decision-making with our cutting-edge
-          KPI tracking SaaS platform.
-        </p>
-        <div className="email rounded-lg w-[400px] h-16 flex  gap-24 px-3 border-[1px] border-slate-500 bg-transparent">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Business Email"
-            className="items-center h-10 my-2 text-white bg-transparent border-none active:bg-transparent placeholder:text-lg placeholder:text-white"
-          />
-          <button className="w-44 h-10 my-2  bg-[#243dd3] rounded-lg text-white">Talk to Sales</button>
+    <>
+      <div className="absolute top-0 z-10 flex items-center justify-between w-full px-16 text-white">
+        
+          <div className="mr-4 logo">
+            <Image src={'/logo1.png'} width={80} height={80} alt='logo'/>
+          </div>
+          <div className="flex gap-10 font-semibold navItems">
+            {navItems.map((item, index) => (
+              <a key={index} href={item.link} className="">
+                {item.name}
+              </a>
+            ))}
+          </div>
+        
+        <div className="flex items-center">
+          <div className="mr-4 button">
+            <button className="w-40 p-3 font-semibold border-[1px] rounded-lg">Book a Demo</button>
+          </div>
+          <div className="button">
+            <button className="w-40 p-3 font-semibold text-white bg-blue-700 rounded-lg">Get Started</button>
+          </div>
         </div>
       </div>
-    </div>
+      
+      <div className="relative h-screen bg-no-repeat bg-cover hero">
+        <div className="relative image">
+          <img src={"/image 2.png"} alt="hero" fetchPriority="true" />
+        </div>
+        <div>
+          <Headline/>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -7,6 +7,7 @@ import Benefits from "@/components/Benefits";
 import Work from "@/components/Work";
 import Product from "@/components/Product";
 import Hero from "@/components/Hero";
+import Complex from "@/components/Complex";
 
 
 
@@ -65,9 +66,9 @@ export default function Home() {
       <div className="mb-44">
         <MobileApp />
       </div>
-      {/* <div>
-        <TabsDemo/>
-      </div> */}
+      <div>
+        <Complex/>
+      </div>
       <div>
         <Benefits/>
       </div>

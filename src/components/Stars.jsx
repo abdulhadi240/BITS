@@ -11,8 +11,8 @@ const Stars = () => {
             width: "7%",
             height: "7%",
             display: "inline-block",
-            fill: "rgb(36, 61, 211)",
-            color: "rgb(36, 61, 211)",
+            fill: "rgb(102,204,255)",
+            color: "rgb(102,204,255)",
             flexShrink: 0,
           }}
         >
@@ -29,8 +29,8 @@ const Stars = () => {
             width: "7%",
             height: "7%",
             display: "inline-block",
-            fill: "rgb(8, 222, 196)",
-            color: "rgb(8, 222, 196)",
+            fill: "rgb(102,204,255)",
+            color: "rgb(102,204,255)",
             flexShrink: 0,
           }}
         >
@@ -47,8 +47,8 @@ const Stars = () => {
             width: "7%",
             height: "7%",
             display: "inline-block",
-            fill: "rgb(8, 222, 196)",
-            color: "rgb(8, 222, 196)",
+            fill: "rgb(102,204,255)",
+            color: "rgb(102,204,255)",
             flexShrink: 0,
           }}
         >
@@ -65,8 +65,8 @@ const Stars = () => {
             width: "7%",
             height: "7%",
             display: "inline-block",
-            fill: "rgb(8, 222, 196)",
-            color: "rgb(8, 222, 196)",
+            fill: "rgb(102,204,255)",
+            color: "rgb(102,204,255)",
             flexShrink: 0,
           }}
         >
@@ -83,8 +83,8 @@ const Stars = () => {
             width: "7%",
             height: "7%",
             display: "inline-block",
-            fill: "rgb(8, 222, 196)",
-            color: "rgb(8, 222, 196)",
+            fill: "rgb(102,204,255)",
+            color: "rgb(102,204,255)",
             flexShrink: 0,
           }}
         >

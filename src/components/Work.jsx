@@ -7,7 +7,7 @@ const data = [
     {
         id: 1,
         number:'01',
-        title: 'ERP Systems',
+        title: 'Dynamic ERP Systems',
         imgUrl: '/dashboard.jpg'
     },
     {
@@ -19,13 +19,13 @@ const data = [
     {
         id: 3,
         number:'03',
-        title: 'Generative Ai',
+        title: 'Generative AI Solutions',
         imgUrl: '/dashboard.jpg'
     },
     {
         id: 4,
         number:'04',
-        title: 'Business Insight',
+        title: 'App Development',
         imgUrl: '/dashboard.jpg'
     }
 ];
@@ -46,9 +46,9 @@ const Work = () => {
     return (
 
         <div>
-            <div className='mt-20 mb-20'>
-                <h1 className='text-[46px] flex justify-center font-bold tracking-tight mb-6'>Experience the Buzzle advantage </h1>
-                <p className='text-[15px] flex justify-center'>When it comes to KPI tracking, Buzzle stands out as the premier choice. <br/> Here's why we are the superior solution for your business:</p>
+            <div className='mt-64 mb-20'>
+                <h1 className='text-[46px] flex justify-center font-bold tracking-tight mb-6'>Unlock the BITS Advantage </h1>
+                <p className='text-[15px] flex justify-center text-center'>When it comes to comprehensive business solutions, BITS stands out as the premier choice. <br/> Here's why we are the superior solution for your business:</p>
             </div>
         <div className='flex flex-col gap-10'>
             <div className='flex justify-center gap-16 '>
@@ -56,7 +56,7 @@ const Work = () => {
                     <div key={item.id} onClick={() => handleClick(item.id)} className=' hover:cursor-pointer group group-hover:blur-md'>
                         <div className='flex gap-2 text-center'>
                         <h1 className='text-[#243DD3] font-light text-2xl'>{item.number}.</h1>
-                        <h1 className='text-2xl font-semibold '>{item.title}</h1>
+                        <h1 className='text-2xl font-base '>{item.title}</h1>
                         </div>
                         <div className='w-auto ml-2 px-3 mt-2 border-[1px]  border-transparent z-99999 group-hover:border-[#243DD3] group-hover:transition-all group-hover:delay-150'/>
                     </div>
